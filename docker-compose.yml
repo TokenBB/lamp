@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./_data/mysql:/var/lib/mysql:delegated
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASWORD}
+      MYSQL_DATABASE: ${MYSQL_DB}
+
+  php-apache:
+    build: 
+      context: ./apache
+    image: 'php:7.2.1-apache'
+    ports:
+      - '8000:80'
+    volumes:
+      - ./_data/apache:/var/www/html:delegated
+      - ${TOKENBB_SRC}:/var/www/html/wp-content/plugins/tokenbb:consistent
+    links:
+      - mysql

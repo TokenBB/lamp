@@ -1,0 +1,28 @@
+{
+  "name": "@tokenbb/lamp",
+  "version": "1.0.0",
+  "description": "Run a local LAMP stack using Docker Compose",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "docker-compose up"
+  },
+  "author": "kareniel",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TokenBB/lamp.git"
+  },
+  "keywords": [
+    "docker",
+    "image",
+    "compose",
+    "LAMP",
+    "apache",
+    "php"
+  ],
+  "bugs": {
+    "url": "https://github.com/TokenBB/lamp/issues"
+  },
+  "homepage": "https://github.com/TokenBB/lamp#readme"
+}
