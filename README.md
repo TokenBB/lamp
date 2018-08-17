@@ -1,14 +1,18 @@
 # lamp
 
-Run a local LAMP stack using Docker Compose to use as a 
+Run a local LAMP stack using Docker Compose to use as a  
 development environment for the TokenBB Wordpress plugin.
 
+Make sure to add a `.env` file in `packages/docker-lamp`.  
+You can find an example in [`sample.env`](sample.env).  
+
+
+Then run:  
 `npm start` 
 
-Apache will listen at `localhost:8000`. 
 
-Make sure to add a `.env` file in `packages/docker-lamp`.  
-You can find an example in [`sample.env`](sample.env)
+Apache will listen at `localhost:8000`.  
+Data will be saved in a `/_data` folder.
 
 ## How to copy the data from a remote Wordpress site
 
