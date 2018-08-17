@@ -7,14 +7,8 @@ development environment for the TokenBB Wordpress plugin.
 
 Apache will listen at `localhost:8000`. 
 
-Make sure to add a `.env` file in `packages/docker-lamp`:
-
-```txt
-TOKENBB_SRC=~/code/tokenbb/wp-plugin
-
-MYSQL_ROOT_PASWORD=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-MYSQL_DB=xx-xxxxxxx
-```
+Make sure to add a `.env` file in `packages/docker-lamp`.  
+You can find an example in [`sample.env`](sample.env)
 
 ## How to copy the data from a remote Wordpress site
 
